@@ -21,10 +21,15 @@ export default function Pokemon(props) {
           <div className="pokemon-card">
             <div className="background">
                 <img src={pokemon.sprites.front_default} className="image" alt="" />
+
             </div>
 
             <div className="content">
-              <p className="pokemon-name">N: {pokemon.id} {pokemon.name}</p>
+              <p className="pokemon-name">N: {pokemon.id} {pokemon.name}
+
+
+              </p>
+
               {pokemon.types.map((type, index) => {
               return (
                 <>
@@ -34,24 +39,25 @@ export default function Pokemon(props) {
                 </>
                 );
               })}
-
-              <p>Abilities</p>
+              <p>
+              Peso: {pokemon.weight}
+              </p>
+              <p className="text-specs">Habilidades</p>
               {pokemon.abilities.map((ability, index) => {
                 return (
                   <>
-                    <div className="pokemon-stats">
-                        <span key={index} >{ability.ability.name}</span>
+                    <div>
+                        <span className="pokemon-stats" key={index} >{ability.ability.name}</span>
                     </div>
-
                   </>
                   );
               })}
-
-              {pokemon.game_indices.map((game, index) => {
+              <p className="text-specs">Versiones</p>
+              {pokemon.game_indices.map(({version}, index) => {
                 return (
                   <>
                     <div className="pokemon-stats">
-                        <span key={index} >{}</span>
+                        <span key={index} >{version.name}</span>
                     </div>
 
                   </>
