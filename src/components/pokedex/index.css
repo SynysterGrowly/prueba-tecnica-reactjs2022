@@ -1,0 +1,14 @@
+.pokedex-grid {
+  display: flex;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import Pokemon from "../pokemon";
 import Pagination from "../pagination";
+import './index.css'
 
 export default function Pokedex(props) {
   const { pokemons, loading, page, setPage, totalPages } = props;
