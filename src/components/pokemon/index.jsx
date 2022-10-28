@@ -31,8 +31,6 @@ export default function Pokemon(props) {
                   <div className="type-container">
                     <span key={index} className="pokemon-type">{type.type.name}</span>
                   </div>
-
-
                 </>
                 );
               })}
