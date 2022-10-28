@@ -3,9 +3,9 @@
 Proyecto elaborado con ReactJS
 ## Usando el API
 
-[https://pokeapi.co/](https://pokeapi.co/) to view it in your browser.
+[https://pokeapi.co/](https://pokeapi.co/) link.
 
-Correr en modo dev con los comandos
+Correr en consola los comandos
 
 ### `npm install`
 
